@@ -9,24 +9,25 @@ body{
     height: 100vh;
     display: flex;
     flex-flow: row wrap;
+    background-color: rgb(15, 15, 15);
 }
 
 #nav{
     width: 100%;
     height: 56px;
-    background-color: rgb(88, 83, 83);
+    background-color: rgb(15, 15, 15);
 }
 
 #side{
     position: sticky;
     top: 56px;
-    width: 6%;
+    width: 15%;
     height: calc(100vh - 56px);
     background-color: rgb(2, 2, 123);
 }
 
 #content{
-    width: 94%;
+    width: 85%;
     height: calc(100vh - 56px);
     display: flex;
     flex-flow: column wrap;
@@ -35,7 +36,21 @@ body{
 #suggest{
     width: 100%;
     height: 8%;
-    background-color: rgb(38, 236, 236);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    background-color: rgb(15, 15, 15);
+}
+
+.type{
+    border-radius: 10px;
+    padding: 5px 10px 5px;
+    margin: 5px;
+    color: white;
+    background-color: rgb(47, 46, 46);
+    white-space: nowrap;
 }
 
 #channel{
@@ -44,13 +59,36 @@ body{
     justify-content: center;
     width: 100%;
     height: 92%;
-    background-color: rgb(197, 123, 12);
+    background-color: rgb(15, 15, 15);
     overflow-y: auto;
 }
 
 .box{
     margin: 15px;
     width: 30%;
-    height: 50%;
-    background-color: black;
+    height: 55%;
+    background-color: rgb(81, 78, 78);
+    display: grid;
+    grid-template-rows: 70% 15% 15%;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: "video video"
+                         "profile topic"
+                         "profile detail";
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.video{
+    grid-area: video;
+}
+.profile{
+    background-color: blue;
+    grid-area: profile;
+}
+.topic{
+    grid-area: topic;
+}
+.detail{
+    grid-area: detail;
 }
