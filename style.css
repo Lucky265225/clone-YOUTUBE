@@ -40,8 +40,26 @@ body{
     flex-flow: row nowrap;
     align-items: center;
     overflow-x: scroll;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     background-color: rgb(15, 15, 15);
+}
+
+#suggest::-webkit-scrollbar {
+    height: 8px;
+}
+  
+#suggest::-webkit-scrollbar-track {
+    background: transparent;  
+}
+  
+#suggest::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 4px;
+}
+  
+#suggest::-webkit-scrollbar-thumb:hover {
+    background: rgba(150, 150, 150, 0.7);
 }
 
 .type{
@@ -61,6 +79,17 @@ body{
     height: 92%;
     background-color: rgb(15, 15, 15);
     overflow-y: auto;
+}
+
+#channel::-webkit-scrollbar {
+    width: 8px;
+}
+#channel::-webkit-scrollbar-track {
+    background: transparent;
+}
+#channel::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
 }
 
 .box{
