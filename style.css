@@ -96,6 +96,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 #microphone{
@@ -109,18 +110,56 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    height: 70%;
+    width: 40px;
+    height: 40px;
     background-color: rgba(34,34,34);
-    border-radius: 30px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 #end{
     width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 #upload{
-    width: 100%;
+    height: 100%;
+    width: 40%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-upload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    background-color: rgba(34,34,34);
+    padding: 0px 10px 0px 10px;
+    border-radius: 30px;
+}
+
+#button-upload span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-size: 1em;
+}
+
+#notification{
+    width: 10%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile{
 }
 
 #side{
