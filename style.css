@@ -152,22 +152,121 @@ input{
 }
 
 #notification{
-    width: 10%;
+    width: 15%;
+    height: 70%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+#profile{
+    width: 30%;
     height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#profile{
+#box-profile{
+    width: 40px;
+    height: 40px;
+    background: url(img/profile.jpg);
+    background-size: cover;
+    border-radius: 50%;
 }
 
 #side{
+    color: white;
+    font-size: .9em;
     position: sticky;
     top: 56px;
     width: 15%;
     height: calc(100vh - 56px);
     background-color: rgb(15,15,15);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#default{
+    width: 100%;
+}
+
+#side hr{
+    margin-top: 10px;
+    opacity: .2;
+}
+
+#icon-home{
+    background-color: rgb(49, 49, 49);
+}
+
+.box-side{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding: 0px 12px 0px 12px;
+    border-radius: 10px;
+}
+
+#your-youtube{
+    padding-top: 10px;
+}
+
+#your-youtube .icon-side span+span{
+    width: 80%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-side{
+    width: 30%;
+    display: flex;  
+    align-items: center;
+    justify-content: start;
+}
+
+.title-side{
+    width: 60%;
+    display: flex;  
+    align-items: center;
+    justify-content: start;
+}
+
+#following{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 12px 0px 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#following .topic-side{
+    font-weight: bold;
+    margin: 5px;
+}
+
+.channel-youtuber{
+    display: flex;
+    width: 100%;
+}
+
+.profile-youtube{
+    width: 20%;
+}
+
+.box-profile-following{
+
+}
+
+.channel-name{
+    width: 70%  ;
+}
+
+.channel-status{
+    width: 10%;
 }
 
 #content{
