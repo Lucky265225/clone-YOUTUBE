@@ -133,6 +133,10 @@ input{
     justify-content: center;
 }
 
+#button-upload:hover{
+    cursor: pointer;
+}
+
 #button-upload{
     display: flex;
     align-items: center;
@@ -159,6 +163,10 @@ input{
     justify-content: center;
 }
 
+#notification:hover{
+    cursor: pointer;
+}
+
 #profile{
     width: 30%;
     height: 70%;
@@ -175,6 +183,10 @@ input{
     border-radius: 50%;
 }
 
+#box-profile:hover{
+    cursor: pointer;
+}
+
 #side{
     color: white;
     font-size: .9em;
@@ -187,6 +199,11 @@ input{
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+}
+
+.box-side:hover{
+    cursor: pointer;
+    background-color: rgb(49, 49, 49);
 }
 
 #default{
@@ -242,6 +259,13 @@ input{
     padding: 0px 12px 0px 12px;
     border-radius: 10px;
     margin-top: 10px;
+}
+
+#following .channel-youtuber:hover{
+    cursor: pointer;
+    background-color: rgb(49, 49, 49);
+    padding: 0px 12px 0px 12px;
+    border-radius: 10px;
 }
 
 .topic-side{
@@ -375,7 +399,7 @@ input{
 
 #suggest{
     width: 100%;
-    height: 8%;
+    height: 250px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -383,6 +407,18 @@ input{
     overflow-y: hidden;
     scroll-behavior: smooth;
     background-color: rgb(15, 15, 15);
+}
+
+#suggest #start{
+    background-color: white;
+    color: black;
+    width: auto;
+}
+
+#suggest .type:hover{
+    cursor: pointer;
+    background-color: rgb(95, 95, 95);
+    transition: background-color 1s;
 }
 
 #suggest::-webkit-scrollbar {
@@ -403,7 +439,7 @@ input{
 }
 
 .type{
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 5px 10px 5px;
     margin: 5px;
     color: white;
@@ -448,11 +484,18 @@ input{
     flex-direction: column;
     width: 32%;
     height: 350px;
-    background-color: rgb(223, 17, 17);
-    border: 1px solid blue;
     align-items: center;
     justify-content: start;
+    border-radius: 15px;
+    padding: 5px;
+    transition: background-color 1s;
 }
+
+.box-channel:hover{
+    background-color: rgb(52, 119, 80);
+    cursor: pointer;
+}
+
 
 .box-channel .video{
     width: 98%;
@@ -462,14 +505,15 @@ input{
 .box-channel .video img{
     width: 100%;
     height: 100%;
+    border-radius: 15px;
 }
 
 .box-channel .box-content{
-    padding-top: 5px;
-    background-color: green;
+    padding-top: 10px;
     width: 98%;
     height: 30%;
     display: flex;
+    color: white;
 }
 
 .box-channel .box-content .profile img{
@@ -479,13 +523,11 @@ input{
 }
 
 .box-channel .box-content .profile{
-    background-color: pink;
     width: 13%;
     height: 80%;
 }
 
 .box-channel .box-content .box-text{
-    background-color: blueviolet;
     width: 82%;
     height: 80%;
     display: flex;
@@ -493,7 +535,6 @@ input{
 }
 
 .box-channel .box-content .box-text .topic{
-    background-color: palegoldenrod;
     width: 100%;
     min-height: 40%;
     flex: 0 0 auto;
@@ -504,7 +545,6 @@ input{
 
 .box-channel .box-content .box-text .detail{
     font-size: .8em;
-    background-color: aqua;
     width: 100%;
     height: 60%;
     display: flex;
@@ -514,20 +554,317 @@ input{
 .box-channel .box-content .box-text .detail .name-channel{
     width: 100%;
     height: 50%;
+    opacity: .6;
 }
 
 .box-channel .box-content .box-text .detail .view-video{
     width: auto;
     height: 50%;
+    opacity: .6;
 }
 
 .box-channel .box-content .box-text .detail .time-video{
     width: auto;
     height: 50%;
+    opacity: .6;
 }
 
 .box-channel .box-content .option{
-    background-color: blueviolet;
     width: 5%;
     height: 80%;
+    fill: white;
+}
+
+#short{
+    color: white;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#short #title-short{
+    width: 96%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#short #title-short #icon-short{
+    width: 40px;
+    height: 40px;
+}
+
+#short #title-short #name-short{
+    width: 10%;
+    height: 40px;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+#short #title-short #option-title-short{
+    width: 90%;
+    height: 40px;
+}
+
+#short #title-short #option-title-short svg{
+    position: relative;
+    left: 95%;
+}
+
+#short #title-short div{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+#short #list-short{
+    width: 100%;
+    height: 510px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#short #list-short .box-short{
+    width: 19.2%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    border-radius: 10px;
+    transition: background 1s;
+    flex: 0 0 auto;
+}
+
+#short #list-short .box-short .video-short{
+    width: 96%;
+    height: 83%;
+}
+
+#short #list-short .box-short .video-short img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#short #list-short .box-text{
+    width: 96%;
+    height: 17%;
+    padding-top: 5px;
+    display: flex;
+}
+
+#short #list-short .box-text div .detail-short{
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;             
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#short #list-short .box-text div .view-short{
+    width: 100%;
+    height: 30px;
+    font-size: .85em;
+    opacity: .8;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    opacity: .6;
+}
+
+#short #list-short .box-text div{
+    width: 80%;
+    height: 30px;
+}
+
+#short #list-short .box-text .option-short{
+    width: 20%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#list-short .box-short:hover{
+    background-color: rgb(43, 57, 65);
+    cursor: pointer;
+}
+
+#footerbar{
+    display: none;
+}
+
+@media screen and (max-width:400px){
+    #side{
+        display: none;
+    }
+
+    #content{
+        width: 100%;
+    }
+
+    .box-channel{
+        width: 100%;
+    }
+
+    #nav{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav #start{
+        width: 45%;
+    }
+
+    #nav #center{
+        width: 20%;
+    }
+
+    #nav #end{
+        display: none;
+    }
+
+    #nav #center #input-search{
+        display: none;
+    }
+    
+    #nav #center #microphone{
+        display: none;
+    }
+
+    #nav #center #icon-search{
+        width: 34px;
+        height: 34px;
+        background: none;
+        border: none;
+    }
+
+    #nav #center #search{
+        justify-content: end;
+    }
+
+    #nav #end #button-upload {
+        padding: 0px 5px 0px 5px;
+    }
+    
+    #nav #start #icon-youtube {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    #nav #start #hamburger {
+        display: none;
+    }
+
+    #nav #end #box-profile {
+        width: 34px;
+        height: 34px;
+    }
+
+    #content #suggest{
+        height: 100%;
+    }
+
+    #content #channel{
+        height: auto;
+        padding: 0px;
+    }
+
+    #suggest::-webkit-scrollbar {
+        display: none;
+    }
+
+    #channel::-webkit-scrollbar {
+        display: none;
+    }
+
+    #suggest{
+        border: 1px solid rgb(255, 255, 255,.3);
+        border-left: unset;
+        border-right: unset;
+    }
+
+    #channel .box-channel{
+        padding: 0px;
+    }
+
+    #channel .box-channel .video{
+        width: 100%;
+    }
+
+    #channel .box-channel .video img{
+        border-radius: unset;
+    }
+
+    #short #list-short{
+        overflow-x: scroll;
+    }
+
+    #short #list-short .box-short{
+        width: 60%;
+    }
+
+    #short #list-short::-webkit-scrollbar {
+        display: none;
+    }
+
+    #footerbar{
+        width: 100%;
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0,.6);
+        backdrop-filter: blur(10px); 
+        border-radius: unset;
+    }
+
+    #footerbar .box-footer{
+        width: 25%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5px;
+    }
+
+    #footerbar .box-footer div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footerbar .box-footer div img{
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+
+    #footerbar .box-footer .text-footer{
+        color: white;
+        font-size: .8em;
+    }
+
+    #footerbar .box-footer .icon-footer{
+        color: white;
+    }
 }
