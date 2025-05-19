@@ -788,6 +788,7 @@ input{
         width: 100%;
         height: auto;
         padding: 0px;
+        overflow-x: hidden;
     }
 
     #suggest::-webkit-scrollbar {
